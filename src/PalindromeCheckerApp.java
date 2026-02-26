@@ -2,9 +2,12 @@ public class PalindromeCheckerApp {
 
     public static void main(String[] args) {
 
-        String word = "madam";
+        String word = "racecar";
+        String reversed = "";
 
-        String reversed = new StringBuilder(word).reverse().toString();
+        for (int i = word.length() - 1; i >= 0; i--) {
+            reversed += word.charAt(i);
+        }
 
         if(word.equals(reversed)) {
             System.out.println(word + " is a palindrome!");
