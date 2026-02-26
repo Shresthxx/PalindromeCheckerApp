@@ -11,6 +11,5 @@ public class PalindromeCheckerApp {
         } else {
             System.out.println(word + " is NOT a palindrome!");
         }
-
     }
 }
